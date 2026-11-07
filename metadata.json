@@ -1,0 +1,6 @@
+{
+  "name": "Order Desk - Medicine Distributor",
+  "description": "Fast, mobile-first offline order taking app for medicine distributors and pharmacies with instant search, auto-totals, and professional PDF generation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

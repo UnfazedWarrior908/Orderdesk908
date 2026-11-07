@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f766e" />
+      <stop offset="100%" stop-color="#115e59" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#042f2e" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  
+  <!-- Base background -->
+  <rect width="512" height="512" rx="112" fill="url(#tealGrad)"/>
+  
+  <!-- Outer subtle ring -->
+  <circle cx="256" cy="256" r="210" fill="none" stroke="#2dd4bf" stroke-width="4" stroke-opacity="0.3" stroke-dasharray="12 12" />
+
+  <!-- White central sheet / clipboard shape -->
+  <g filter="url(#shadow)">
+    <rect x="120" y="110" width="272" height="310" rx="28" fill="#ffffff"/>
+    
+    <!-- Top clipboard clip -->
+    <rect x="196" y="90" width="120" height="36" rx="12" fill="#0d9488"/>
+    <rect x="226" y="80" width="60" height="20" rx="8" fill="#134e4a"/>
+    <circle cx="256" cy="98" r="6" fill="#ffffff"/>
+
+    <!-- Medical Cross Emblem inside document -->
+    <g transform="translate(160, 160)">
+      <rect x="36" y="12" width="24" height="72" rx="8" fill="#0f766e"/>
+      <rect x="12" y="36" width="72" height="24" rx="8" fill="#0f766e"/>
+      <circle cx="48" cy="48" r="7" fill="#ffffff"/>
+    </g>
+
+    <!-- Checklist order lines -->
+    <line x1="280" y1="184" x2="354" y2="184" stroke="#94a3b8" stroke-width="8" stroke-linecap="round" />
+    <line x1="280" y1="208" x2="334" y2="208" stroke="#cbd5e1" stroke-width="8" stroke-linecap="round" />
+
+    <!-- Table row lines -->
+    <rect x="156" y="270" width="200" height="12" rx="6" fill="#f1f5f9"/>
+    <rect x="156" y="296" width="140" height="10" rx="5" fill="#f1f5f9"/>
+    <rect x="156" y="318" width="170" height="10" rx="5" fill="#f1f5f9"/>
+    
+    <!-- Checkmark badge -->
+    <circle cx="330" cy="355" r="26" fill="#10b981"/>
+    <path d="M320 355 L327 362 L342 347" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
